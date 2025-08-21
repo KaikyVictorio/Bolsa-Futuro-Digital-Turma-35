@@ -1,6 +1,14 @@
+
+
+body{
+    font-family: "Raleway";
+    margin: 0;
+}
+
+
 /* Header: Defina cor de fundo, padding interno e alinhe o conteúdo horizontalmente */
 .header {
-    background-color: aliceblue;
+    background-color:#243a69;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -8,22 +16,53 @@
 
 /* Logo: Defina cor do texto, destaque da palavra "Site" e tamanho da fonte */
 .logo {
-    
+    color:#c6d1a6;
+    font-weight: 600;
+    font-size: 80px;
+
+}
+.logo span{
+    color: #191013;
 }
 
 /* Menu de navegação: Organize os itens em linha (horizontal) e espaçamento entre eles */
-.menu-nav {
+.menu-nav{
+    width: 80%;
+    margin-top: 25px;
+}
+
+.menu-nav ul {
     display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    list-style: none;
 }
 
 /* Item do menu: Cor do texto, dicionar hover com mudança de cor */
 .menu-item a {
-    
+    display: flex;
+    text-decoration: none;
+    color: #c6d1a6;
+    transition: all 0.3s ease;
+    font-weight: 700;
+}
+
+.menu-item a:hover{
+    transform: translateY(-5px);
+    color: #191013;
+
 }
 
 /* Banner: Cor de fundo ou imagem, centralizar texto, padding interno */
 .banner {
-    
+    background-color: #5b88a5;
+    margin:0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
 }
 
 /* Título do banner: Cor do texto, tamanho da fonte, peso da fonte */
