@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -27,25 +32,33 @@
 
     <!-- Banner -->
     <section class="banner">
-        <h1 class="titulo-banner">Bem-vindo ao Meu Site</h1>
+        <h1 class="titulo-banner"><span class="span1">Bem-vindo ao</span> Meu <span>Site</span></h1>
         <p class="subtitulo-banner">Aprenda CSS escrevendo você mesmo as regras</p>
         <a href="#sobre" class="btn-banner">Saiba Mais</a>
     </section>
 
     <!-- Sobre -->
     <section id="sobre" class="sobre">
-        <h2 class="titulo-secao">Sobre Nós</h2>
+        <h2 class="titulo-secao">Sobre <span class="span2">Nós</span></h2>
         <p class="texto-sobre">Somos uma equipe dedicada a ensinar programação de forma prática e divertida.</p>
     </section>
 
     <!-- Serviços -->
     <section id="servicos" class="servicos">
-        <h2 class="titulo-secao">Nossos Serviços</h2>
+        <h2 class="titulo-secao">Nossos <span class="span4">Serviços</span></h2>
         <div class="cards">
-            <div class="card card-1"></div>
-            <div class="card card-2"></div>
-            <div class="card card-3"></div>
-            <div class="card card-4"></div>
+            <div class="card card-1">
+                <a href="#">Aulas</a>
+            </div>
+            <div class="card card-2">
+               <a href="#">Crie seu portfólio</a>
+            </div>
+            <div class="card card-3">
+                <a href="#">Orçamentos</a>
+            </div>
+            <div class="card card-4">
+                <a href="#">Praticar CSS</a>
+            </div>
         </div>
     </section>
 
@@ -53,10 +66,10 @@
     <section id="galeria" class="galeria">
         <h2 class="titulo-secao">Galeria</h2>
         <div class="grid-galeria">
-            <img src="https://via.placeholder.com/300x200" alt="Imagem 1" class="imagem-galeria">
-            <img src="https://via.placeholder.com/300x200" alt="Imagem 2" class="imagem-galeria">
-            <img src="https://via.placeholder.com/300x200" alt="Imagem 3" class="imagem-galeria">
-            <img src="https://via.placeholder.com/300x200" alt="Imagem 4" class="imagem-galeria">
+            <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/academia-free-template-408x322.jpg" alt="Imagem 1" class="imagem-galeria1">
+            <img src="https://s.tmimgcdn.com/scr/400x250/51600/free-html5-theme-for-business-site-website-template_51677-0-original.jpg" alt="Imagem 2" class="imagem-galeria2">
+            <img src="https://s.tmimgcdn.com/scr/400x250/51600/free-html5-theme-for-photo-site-website-template_51684-0-original.jpg" alt="Imagem 3" class="imagem-galeria3">
+            <img src="https://www.hubspot.com/hs-fs/hubfs/lemon%20(1).jpg?width=650&height=425&name=lemon%20(1).jpg" alt="Imagem 4" class="imagem-galeria4">
         </div>
     </section>
 
@@ -72,6 +85,14 @@
                 <p class="texto-depoimento">“CSS nunca foi tão fácil de entender.”</p>
                 <span class="autor-depoimento">– Aluno 2</span>
             </div>
+            <div class="depoimento">
+                <p class="texto-depoimento">“Estou migrando de área e vocês foram minha salvação!”</p>
+                <span class="autor-depoimento">– Aluno 3</span>
+            </div>
+            <div class="depoimento">
+                <p class="texto-depoimento">“Nunca pensei que programar fosse tão fácil!”</p>
+                <span class="autor-depoimento">– Aluno 4</span>
+            </div>
         </div>
     </section>
 
@@ -80,7 +101,7 @@
         <h2 class="titulo-secao">Fale Conosco</h2>
         <form class="form-contato">
             <input type="text" placeholder="Seu nome" class="input-contato">
-            <input type="email" placeholder="Seu email" class="input-contato">
+            <input type="email" placeholder="Seu email" class="input-contato2">
             <textarea placeholder="Sua mensagem" class="textarea-contato"></textarea>
             <button type="submit" class="btn-contato">Enviar</button>
         </form>

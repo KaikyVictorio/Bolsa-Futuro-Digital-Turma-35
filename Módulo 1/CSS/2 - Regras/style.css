@@ -16,19 +16,20 @@ body{
 
 /* Logo: Defina cor do texto, destaque da palavra "Site" e tamanho da fonte */
 .logo {
-    color:#c6d1a6;
+    color:white;
     font-weight: 600;
     font-size: 80px;
 
 }
 .logo span{
-    color: #191013;
+    color: #c6d1a6;
 }
 
 /* Menu de navegação: Organize os itens em linha (horizontal) e espaçamento entre eles */
 .menu-nav{
     width: 80%;
     margin-top: 25px;
+    
 }
 
 .menu-nav ul {
@@ -42,14 +43,14 @@ body{
 .menu-item a {
     display: flex;
     text-decoration: none;
-    color: #c6d1a6;
+    color: white;
     transition: all 0.3s ease;
     font-weight: 700;
 }
 
 .menu-item a:hover{
     transform: translateY(-5px);
-    color: #191013;
+    color: #c6d1a6;
 
 }
 
@@ -62,134 +63,279 @@ body{
     justify-content: center;
     align-items: center;
     gap: 30px;
+    
 
 }
 
 /* Título do banner: Cor do texto, tamanho da fonte, peso da fonte */
-.titulo-banner {
-    
+.titulo-banner .span1{
+    color: white
+}
+.titulo-banner{
+    color: white;
+    font-size: 25px;
+}
+.titulo-banner span{
+    color:#c6d1a6;
 }
 
 /* Subtítulo do banner: Cor do subtítulo, tamanho da fonte, margem inferior */
 .subtitulo-banner {
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+    
     
 }
 
 /* Botão do banner: Cor de fundo, cor do texto, padding, borda arredondada, hover */
 .btn-banner {
-    
+     text-decoration: none;
+    color: #c6d1a6;
+    background-color:#243a69;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
+
+.btn-banner:hover{
+      transform: translateY(-5px);
+      background-color: #c6d1a6;
+      color:#243a69;
+      font-weight: 800;
+}
+
 
 /* Seção Sobre: Cor de fundo da seção, padding interno, centralização do texto */
 .sobre {
-    
+    padding: 10px;
+    background-color: #243a69;
+    margin: auto;
+    text-align: center;
 }
 
 /* Título da seção: Tamanho da fonte, cor e margem inferior */
 .titulo-secao {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
     
+}
+.titulo-secao .span2{
+    color: #c6d1a6;
 }
 
 /* Texto da seção Sobre: Tamanho da fonte, cor, line-height e alinhamento */
 .texto-sobre {
-    
+    font-size: 20px;
+    color: white;
+    line-height: 50px;
+    font-weight: 600px;
 }
 
 /* Seção Serviços: Cor de fundo, padding, centralização */
 .servicos {
+    background-color: #243a69;
+    padding: 15px;
+    text-align: center;
     
+}
+.servicos .span4{
+    color: #c6d1a6;
 }
 
 /* Cards: Layout flex, gap entre os cards, alinhamento */
 .cards {
-    
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
 }
 
 /* Card: Cor de fundo, padding interno, borda arredondada, sombra */
 .card {
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+    margin: 50px;
     
+}
+.card a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
 }
 
 /* Card específico (cores diferentes para cada card) */
 .card-1 {
-    
+    background-color: #243a69;
+    transition: all 0.3s ease;
+    color: white;
 }
 .card-2 {
-    
+    background-color: #2a9d8f;
+    transition: all 0.3s ease;
 }
 .card-3 {
-    
+    background-color:#e63946;
+    transition: all 0.3s ease;
 }
 .card-4 {
-    
+    background-color: #f4a261;
+    transition: all 0.3s ease;
 }
 
+.card-1:hover{
+    transform: translateY(-5px);
+    background-color: #061331;
+}
+.card-2:hover{
+transform: translateY(-5px);
+background-color: #1c645c;
+}
+.card-3:hover{
+    transform: translateY(-5px);
+    background-color:#9b242e;
+}
+.card-4:hover{
+    transform: translateY(-5px);
+    background-color: #9e6130;
+}
 /* Galeria: Cor de fundo, padding interno, centralização do título */
 .galeria {
-    
+    background-color: #18294d;
+    padding: 15px;
+    color: #f5f7fa;
+}
+img {
+width: 400px!important;
+height: 300px!important;
+object-fit: cover;
+border-radius: 10px;
+transition: all 0.3s ease;
 }
 
+.galeria .titulo-secao{
+    text-align: center;
+    
+}
 /* Grid da galeria: Layout grid, colunas automáticas, gap entre imagens */
 .grid-galeria {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    justify-items: center;
+    margin: 100px;
+
     
 }
 
-/* Imagem da galeria: Largura 100%, bordas arredondadas */
-.imagem-galeria {
-    
-}
 
 /* Depoimentos: Cor de fundo, padding, centralização do conteúdo */
 .depoimentos {
-    
+    background-color: #243a69;
+    padding: 20px;
+    justify-items: center;
 }
 
 /* Cards de depoimentos: Layout flex ou grid, gap entre depoimentos */
 .cards-depoimentos {
-    
+    display: grid;
+    grid-template-columns: 2fr 2fr;
 }
 
 /* Depoimento individual: Cor de fundo, padding, borda arredondada, sombra */
 .depoimento {
-    
+
+    background-color: white;
+    padding: 20px;
+    gap: 100px;
+    margin: 100px;
+    border-bottom-right-radius: 0%;
+    border-bottom-right-radius: 10%;
+    border-top-right-radius: 10;
+    border-top-left-radius: 10%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* Texto do depoimento: Tamanho da fonte, cor e espaçamento inferior */
 .texto-depoimento {
-    
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: normal;
+    text-align: center;
+
 }
 
 /* Autor do depoimento: Cor do texto, itálico, tamanho da fonte menor */
 .autor-depoimento {
-    
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 600;
 }
 
 /* Contato: Cor de fundo, padding interno, centralização */
 .contato {
-    
+    background-color: #0c1446;
+    padding: 100px;
+    justify-items: center;
 }
 
 /* Formulário de contato: Layout em coluna, gap entre inputs, largura máxima */
 .form-contato {
-    
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
 }
 
 /* Inputs e textarea: Padding interno, borda, borda arredondada */
-.input-contato, .textarea-contato {
-    
+.input-contato, .textarea-contato, .input-contato2 {
+    padding: 15px;
+    width: 500px;
+    border-radius: 15px;
+    border: none;
+    background-color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: "Raleway";
+    transition: all 0.3s ease;
 }
-
+.input-contato:focus,.input-contato2:focus, .textarea-contato:focus{
+transform: translateY(-5px);
+}
+.contato h2{
+    margin: 50px;
+}
 /* Botão do formulário: Cor de fundo, cor do texto, padding, borda arredondada, hover */
 .btn-contato {
-    
+    border: none;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    font-family: "Raleway";
+    margin: auto;
+    font-weight: 700;
+    background-color: #2a9d8f;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: all 0.3s ease;
+}
+.btn-contato:hover{
+    background-color:#1c645c;
+    transform: translateY(-5px);
 }
 
 /* Footer: Cor de fundo, padding, centralização do texto */
 .footer {
-    
+    background-color: #060a24;
+    padding: 100px;
+    font-weight: 700;
+    justify-items: center;
 }
 
 /* Texto do footer: Cor do texto e tamanho da fonte */
 .texto-footer {
-    
+    color: white;
+    font-size: 20px;
 }
